@@ -6,10 +6,13 @@ class PageMockup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => Navigator.of(context).pop(),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(30),
+        child: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
         ),
       ),
       body: Stack(
@@ -90,8 +93,8 @@ class PageMockup extends StatelessWidget {
             height: 80,
             fit: BoxFit.cover,
           ),
-          title: 'Pay using my Balance',
-          subtitle: '500',
+          title: 'Pay using my',
+          subtitle: ' Balance 500',
           buttonText: 'Pay Bill',
           color: Colors.blue[50]!,
         ),
@@ -102,8 +105,8 @@ class PageMockup extends StatelessWidget {
             height: 80,
             fit: BoxFit.cover,
           ),
-          title: 'Buy',
-          subtitle: '500 for just ₹450',
+          title: 'Buy 500',
+          subtitle: ' for just ₹450',
           buttonText: 'Get for ₹450',
           color: Colors.purple[50]!,
         ),
@@ -155,8 +158,8 @@ class PageMockup extends StatelessWidget {
           children: [
             image,
             const SizedBox(height: 20),
-            Text(title, textAlign: TextAlign.center),
-            Text(subtitle, textAlign: TextAlign.center),
+            Text(title, textAlign: TextAlign.center,),
+            Text(subtitle, textAlign: TextAlign.center,style: const TextStyle(fontWeight: FontWeight.bold),),
             if (buttonText.isNotEmpty)
               ElevatedButton(
                 onPressed: () {},
@@ -186,6 +189,7 @@ class PageMockup extends StatelessWidget {
             top: 10,
             left: 16,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   'Proof of transaction',
