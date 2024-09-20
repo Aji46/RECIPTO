@@ -1,8 +1,12 @@
 # recipto
 
 A new Flutter project.
+Demo pic 
 
-## Getting Started
+![interview task](https://github.com/user-attachments/assets/da6e8095-9bed-4872-b3c8-d4318833cd65)
+
+## Getting St![Uploading interview task.png…]()
+arted
 
 This project is a starting point for a Flutter application.
 
