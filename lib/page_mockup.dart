@@ -168,15 +168,12 @@ class PageMockup extends StatelessWidget {
         height: 1,
         color: index.isEven 
           ? const Color.fromARGB(255, 58, 58, 58) 
-          : Colors.transparent, // Dash and gap effect
+          : Colors.transparent, 
       ),
     ),
   ),
 ),
 const SizedBox(height: 10,),
-
-
-            
             if (buttonText.isNotEmpty)
               ElevatedButton(
                 onPressed: () {},
