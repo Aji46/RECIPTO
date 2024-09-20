@@ -150,16 +150,33 @@ class PageMockup extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         color: color,
       ),
-      height: 150,
+      height: 250,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             image,
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             Text(title, textAlign: TextAlign.center,),
             Text(subtitle, textAlign: TextAlign.center,style: const TextStyle(fontWeight: FontWeight.bold),),
+          const SizedBox(height: 10,),
+           Row(
+  children: List.generate(40, (index) => 
+    Expanded(
+      child: Container(
+        height: 1,
+        color: index.isEven 
+          ? const Color.fromARGB(255, 58, 58, 58) 
+          : Colors.transparent, // Dash and gap effect
+      ),
+    ),
+  ),
+),
+const SizedBox(height: 10,),
+
+
+            
             if (buttonText.isNotEmpty)
               ElevatedButton(
                 onPressed: () {},
@@ -167,7 +184,7 @@ class PageMockup extends StatelessWidget {
                   foregroundColor: Colors.black,
                   backgroundColor: Colors.white,
                 ),
-                child: Text(buttonText),
+                child: Text(buttonText,style: const TextStyle(fontWeight: FontWeight.bold),),
               ),
           ],
         ),
