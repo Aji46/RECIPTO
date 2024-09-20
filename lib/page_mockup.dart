@@ -15,7 +15,7 @@ class PageMockup extends StatelessWidget {
       body: Stack(
         children: [
           Padding(
-            padding: const EdgeInsets.only(bottom: 150.0), // Add padding to prevent overlap with the bottom stack
+            padding: const EdgeInsets.only(bottom: 150.0), 
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -40,7 +40,7 @@ class PageMockup extends StatelessWidget {
             bottom: 0,
             left: 0,
             right: 0,
-            child: _buildProofOfTransaction(), // Stack at the bottom
+            child: _buildProofOfTransaction(), 
           ),
         ],
       ),
@@ -85,7 +85,7 @@ class PageMockup extends StatelessWidget {
       children: [
         _buildDealCard(
           Image.asset(
-            'asset/Pay at store.png', // Path to your image
+            'asset/Pay at store.png', 
             width: 80,
             height: 80,
             fit: BoxFit.cover,
@@ -97,7 +97,7 @@ class PageMockup extends StatelessWidget {
         ),
         _buildDealCard(
           Image.asset(
-            'asset/Buy Coins.png', // Path to your image
+            'asset/Buy Coins.png', 
             width: 80,
             height: 80,
             fit: BoxFit.cover,
@@ -109,7 +109,7 @@ class PageMockup extends StatelessWidget {
         ),
         _buildDealCard(
           Image.asset(
-            'asset/Offers.png', // Path to your image
+            'asset/Offers.png',
             width: 80,
             height: 80,
             fit: BoxFit.cover,
@@ -121,7 +121,7 @@ class PageMockup extends StatelessWidget {
         ),
         _buildDealCard(
           Image.asset(
-            'asset/Store Cashback.png', // Path to your image
+            'asset/Store Cashback.png', 
             width: 80,
             height: 80,
             fit: BoxFit.cover,
